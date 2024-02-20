@@ -9,3 +9,4 @@ C:\Users\Jeremicah\Desktop\myWorks\dotnet\BuberBreakfast\BuberBreakfast.Contract
 C:\Users\Jeremicah\Desktop\myWorks\dotnet\BuberBreakfast\BuberBreakfast.Contracts\obj\Debug\net8.0\refint\BuberBreakfast.Contracts.dll
 C:\Users\Jeremicah\Desktop\myWorks\dotnet\BuberBreakfast\BuberBreakfast.Contracts\obj\Debug\net8.0\BuberBreakfast.Contracts.pdb
 C:\Users\Jeremicah\Desktop\myWorks\dotnet\BuberBreakfast\BuberBreakfast.Contracts\obj\Debug\net8.0\ref\BuberBreakfast.Contracts.dll
+C:\Users\Jeremicah\Desktop\myWorks\dotnet\BuberBreakfast\BuberBreakfast.Contracts\obj\Debug\net8.0\BuberBreakfast.Contracts.sourcelink.json

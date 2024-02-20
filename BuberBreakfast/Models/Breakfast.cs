@@ -22,7 +22,7 @@ public class Breakfast
         List<string> sweet
     ) 
     {
-        //enforce invariants, set value that is accepted on the system(that is valid)
+        //enforce invariants(logic), set value that is accepted on the system(that is valid)
         Id = id;
         Name = name;
         Description = description;

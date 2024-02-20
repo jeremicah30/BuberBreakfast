@@ -33,3 +33,4 @@ C:\Users\Jeremicah\Desktop\myWorks\dotnet\BuberBreakfast\BuberBreakfast\obj\Debu
 C:\Users\Jeremicah\Desktop\myWorks\dotnet\BuberBreakfast\BuberBreakfast\obj\Debug\net8.0\BuberBreakfast.pdb
 C:\Users\Jeremicah\Desktop\myWorks\dotnet\BuberBreakfast\BuberBreakfast\obj\Debug\net8.0\BuberBreakfast.genruntimeconfig.cache
 C:\Users\Jeremicah\Desktop\myWorks\dotnet\BuberBreakfast\BuberBreakfast\obj\Debug\net8.0\ref\BuberBreakfast.dll
+C:\Users\Jeremicah\Desktop\myWorks\dotnet\BuberBreakfast\BuberBreakfast\obj\Debug\net8.0\BuberBreakfast.sourcelink.json
