@@ -3,6 +3,7 @@ using BubberBreakfast.Services.Breakfasts;
 var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services.AddControllers();
+    //Instantiate the IBreakfastService
     builder.Services.AddScoped<IBreakfastService, BreakfastService>();
 }
 

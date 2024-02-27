@@ -18,7 +18,7 @@ public BreakfastsController(IBreakfastService breakfastService)
     _breakfastService = breakfastService;
 }
 
-    [HttpPost()]
+    [HttpPost]
     public IActionResult CreateBreakfast(CreateBreakfastRequest request)
     {
         //MAPPING THE DATA THAT WE GET ON THE REQUEST
@@ -59,6 +59,7 @@ public BreakfastsController(IBreakfastService breakfastService)
     {
         Breakfast breakfast = _breakfastService.GetBreakfast(id);
 
+        //MAP BREAKFAST TO BREAKFAST RESPONSE
         var response = new BreakfastResponse(
             breakfast.Id,
             breakfast.Name,
@@ -73,16 +74,31 @@ public BreakfastsController(IBreakfastService breakfastService)
         return Ok(response);
     }
     
-     [HttpPut("/{id:guid}")]
-    public IActionResult UpsertBreakfast(Guid id,UpsertBreakfastRequest request)
+     [HttpPut("{id:guid}")]
+    public IActionResult UpsertBreakfast(Guid id, UpsertBreakfastRequest request)
     {
-        return Ok(request);
+        var breakfast = new Breakfast (
+            id,
+            request.Name,
+            request.Description,
+            request.StartDateTime,
+            request.EndDateTime,
+            DateTime.UtcNow,
+            request.Savory,
+            request.Sweet
+        );
+
+        _breakfastService.UpsertBreakfast(breakfast);
+
+    //TODO RETURN 201 IF A NEW BREAKFAST WAS CREATED
+        return NoContent();
     }
 
     [HttpDelete("{id:guid}")]
     public IActionResult DeleteBreakfast(Guid id)
     {
-        return Ok(id);
+        _breakfastService.DeleteBreakfast(id);
+        return NoContent();
     }
     
 }

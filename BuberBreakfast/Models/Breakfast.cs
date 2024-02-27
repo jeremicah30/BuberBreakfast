@@ -2,6 +2,8 @@ namespace BubberBreakfast.Models;
 
 public class Breakfast
 {
+
+    //removed the set here instead made a constructor
     public Guid Id {get;}
     public string Name {get;}
     public string Description {get;}
