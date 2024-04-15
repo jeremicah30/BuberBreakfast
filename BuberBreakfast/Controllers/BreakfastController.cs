@@ -13,6 +13,7 @@ public class BreakfastsController : ControllerBase
 {
     private readonly IBreakfastService _breakfastService;
 
+//CONSTRUCTOR
 public BreakfastsController(IBreakfastService breakfastService)
 {
     _breakfastService = breakfastService;
@@ -21,7 +22,7 @@ public BreakfastsController(IBreakfastService breakfastService)
     [HttpPost]
     public IActionResult CreateBreakfast(CreateBreakfastRequest request)
     {
-        //MAPPING THE DATA THAT WE GET ON THE REQUEST
+        //MAP THE REQUEST TO BREAKFAST OBJECT
         var breakfast = new Breakfast (
             Guid.NewGuid(),
             request.Name,
@@ -36,7 +37,7 @@ public BreakfastsController(IBreakfastService breakfastService)
         //SAVE DATA(BREAKFAST) TO THE DB
         _breakfastService.CreateBreakfast(breakfast);
 
-        //TAKING THE DATA AND CONVERTING TO API
+        //TAKING THE DATA AND MAP TO RESPONSE
         var response = new BreakfastResponse(
             breakfast.Id,
             breakfast.Name,
